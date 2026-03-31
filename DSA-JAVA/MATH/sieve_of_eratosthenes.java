@@ -1,7 +1,7 @@
 public class sieve_of_eratosthenes {
     public static void main(String[] args) {
         int n = 10;
-        boolean[] primes = new boolean[n + 1];// including 40 also
+        boolean[] primes = new boolean[n + 1];// including 10 also
         sieve(n, primes);
     }
 

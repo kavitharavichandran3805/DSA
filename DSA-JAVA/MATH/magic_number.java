@@ -12,3 +12,12 @@ public class magic_number {
         System.out.println(ans);
     }
 }
+// int n=4,last,pos=1,ans=0;
+// while(n>0){
+// last=n&1;
+// ans+=(last*Math.pow(5,pos));
+// n=n>>1;
+// ++pos;
+
+// }
+// System.out.println(ans);

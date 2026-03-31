@@ -1,6 +1,6 @@
 public class last_digit_of_power {
     public static void main(String[] args) {
-        int a = 27, b = 3;
+        int a = 4, b = 3;
         int[] cycles = new int[4];
         a = a % 10;
         cycles[0] = a;

@@ -17,7 +17,7 @@ public class MergeSort {
             return a;
         }
         int mid = a.length / 2;
-        int[] left = mergeSort(Arrays.copyOfRange(a, 0, mid));// mid not inclusice
+        int[] left = mergeSort(Arrays.copyOfRange(a, 0, mid));// mid not inclusive
         int[] right = mergeSort(Arrays.copyOfRange(a, mid, a.length));
         return merge(left, right);
 

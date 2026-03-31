@@ -3,6 +3,7 @@ import java.util.*;
 public class subsequence_duplicate {
     public static void main(String[] args) {
         int[] a = { 1, 2, 2 };
+        Arrays.sort(a);
         List<List<Integer>> list = generate_subseq(a);
         for (List<Integer> l : list) {
             System.out.println(l);

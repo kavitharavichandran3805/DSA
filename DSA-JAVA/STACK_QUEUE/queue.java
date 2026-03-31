@@ -70,3 +70,48 @@ public class queue {
 
     }
 }
+
+class ArrayStack {
+    private int[] arr;
+    private int top;
+    private int capacity;
+
+    public ArrayStack(int size) {
+        capacity = size;
+        arr = new int[capacity];
+        top = -1;
+    }
+
+    // Push
+    public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack Overflow");
+            return;
+        }
+        arr[++top] = value;
+    }
+
+    // Pop
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack Underflow");
+            return -1;
+        }
+        return arr[top--];
+    }
+
+    // Peek
+    public int peek() {
+        if (isEmpty())
+            return -1;
+        return arr[top];
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == capacity - 1;
+    }
+}

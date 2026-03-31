@@ -57,3 +57,28 @@ public class permutations {
         return count;
     }
 }
+
+// import java.util.*;
+
+// public class Permutation {
+// public static void main(String[] args) {
+// ArrayList<String> result = new ArrayList<>();
+// permList("", "abc", result);
+// System.out.println(result);
+// }
+
+// public static void permList(String p, String up, ArrayList<String> list) {
+// if (up.isEmpty()) {
+// list.add(p);
+// return;
+// }
+
+// char ch = up.charAt(0);
+
+// for (int i = 0; i <= p.length(); i++) {
+// String f = p.substring(0, i);
+// String s = p.substring(i);
+// permList(f + ch + s, up.substring(1), list);
+// }
+// }
+// }

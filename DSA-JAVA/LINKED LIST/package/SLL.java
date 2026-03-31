@@ -178,7 +178,7 @@ public class SLL {
             slow = slow.next;
             fast = fast.next;
         }
-        return slow.val;
+        return slow.next.val;
 
     }
 
